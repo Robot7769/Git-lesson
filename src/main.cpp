@@ -23,7 +23,7 @@ int main() {
     cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
     cout <<"ahoj"<< endl;
     Rectangle mujobdelnik(6, 9);
-    cout <<"nazdárek: " << mujobdelnik.getArea() << endl;
+    cout <<"Nový obdelník: " << mujobdelnik.getArea() << endl;
 
 
 
