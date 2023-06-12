@@ -1,6 +1,5 @@
 #include <iostream>
 
-using namespace std;
 
 class Rectangle {
 private:
@@ -18,14 +17,17 @@ public:
     }
 };
 
+class Square : public Rectangle {
+public:
+    Square(int sideLength) : Rectangle(sideLength, sideLength) {}
+};
+
 int main() {
     Rectangle rectangle(5, 3);
-    cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
-    cout <<"ahoj"<< endl;
-    Rectangle mujobdelnik(6, 9);
-    cout <<"Nový obdelník: " << mujobdelnik.getArea() << endl;
+    std::cout << "Plocha obdélníku: " << rectangle.getArea() << std::endl;
 
-
+    Square square(4);
+    std::cout << "Plocha čtverce: " << square.getArea() << std::endl;
 
     return 0;
 }
