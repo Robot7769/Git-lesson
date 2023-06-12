@@ -6,6 +6,8 @@ class Rectangle {
 private:
     int width;
     int height;
+    int name; 
+    int color;
 
 public:
     Rectangle(int w, int h) {
