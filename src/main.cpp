@@ -21,6 +21,9 @@ public:
 int main() {
     Rectangle rectangle(5, 3);
     cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
+    cout <<"ahoj"<< endl;
+
+
 
     return 0;
 }
