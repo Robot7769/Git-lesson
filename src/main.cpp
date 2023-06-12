@@ -22,6 +22,8 @@ int main() {
     Rectangle rectangle(5, 3);
     cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
     cout <<"ahoj"<< endl;
+    Rectangle mujobdelnik(6, 9);
+    cout <<"nazdárek: " << mujobdelnik.getArea() << endl;
 
 
 
