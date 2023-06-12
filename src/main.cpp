@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cmath>
 
-using namespace std;
 
 class Rectangle {
 private:
@@ -18,9 +18,21 @@ public:
     }
 };
 
+class Circle : public Rectangle {
+   private:
+    double radius;
+
+   public:
+    Circle(double r) : Rectangle(2 * r, 2 * r) { radius = r; }
+
+    double getArea() { return M_PI * pow(radius, 2); }
+};
+
 int main() {
     Rectangle rectangle(5, 3);
-    cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
+    std::cout << "Plocha obdélníku: " << rectangle.getArea() << std::endl;
+    Circle circle(4);
+    std::cout << "Plocha kruhu: " << circle.getArea() << std::endl;
 
     return 0;
 }
