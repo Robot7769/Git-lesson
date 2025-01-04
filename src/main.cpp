@@ -6,7 +6,7 @@ class Rectangle {
 private:
     int width;
     int height;
-
+    
 public:
     Rectangle(int w, int h) {
         width = w;
@@ -19,7 +19,7 @@ public:
 };
 
 int main() {
-    Rectangle rectangle(5, 3);
+    Rectangle rectangle(5, 4);
     cout << "Plocha obdélníku: " << rectangle.getArea() << endl;
 
     return 0;
